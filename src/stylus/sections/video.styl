@@ -1,0 +1,41 @@
+.video {
+	width: rem(120)
+	height: rem(120)
+	background: #12412F
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	z-index: 10
+	border-radius: 50%
+	overflow: hidden
+	transition transform 300ms ease-in-out
+	
+	&:before {
+		content ""
+		display: block;
+		position: absolute;
+		background: url("../images/video-bg.jpg") no-repeat
+		background-size: cover
+		background-position: center center
+		width: rem(100)
+		height: rem(100)
+		border-radius: 50%
+		overflow: hidden
+		top: 50%
+		left: 50%
+		transform translate(-50%, -50%)
+	}
+	
+	&:hover {
+		transform scale(1.05)
+	}
+}
+
+.play-icon-svg {
+	width: rem(42)
+	height: rem(30)
+	position: relative
+	z-index: 5
+	cursor: pointer
+}

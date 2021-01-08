@@ -1,0 +1,137 @@
+.reviews {
+	padding: 1.5rem 0
+	position: relative
+	 &:after {
+	     content: "";
+	     display: block;
+	     position: absolute;
+		 background: url("../images/bg-1.png") no-repeat
+		 background-size: contain;
+		 top: -6.5rem;
+		 left: 0.1rem;
+		 width: 58.44rem;
+		 height: 37.5rem;
+	   }
+}
+
+.reviews__wrap {
+	position: relative
+	display: flex
+	justify-content: flex-end
+}
+
+.reviews__img {
+	width: 15.69rem;
+	position: absolute;
+	top: -6rem;
+	left: -2.2rem;
+}
+
+.review__slider {
+	position: relative
+	width: 100%
+	max-width: rem(945)
+	
+	.swiper-container {
+		padding: 2.7rem 0 4.5rem;
+	}
+}
+
+.review__item {
+	background: linear-gradient(180deg, #18533B 0%, #24684C 100%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: rem(20);
+	padding: rem(20)
+	width: 100%
+	max-width: rem(460)
+	//margin-right: rem(25)
+}
+
+.review__item-user {
+	display: flex
+	align-items: flex-end
+	margin-top: -3.8rem
+}
+
+.user-photo {
+	width: rem(80)
+	height: rem(80)
+	border-radius: rem(5)
+	overflow: hidden
+	margin-right: 1.25rem
+	
+	img {
+		width: 100%
+		height: 100%
+		object-fit cover
+		font-family: 'object-fit: cover;';
+	}
+}
+
+.user-name {
+	p {
+		font-size: rem(20);
+		line-height: rem(23);
+		font-weight: bold
+		color: #ffffff
+	}
+}
+
+.review__item-txt {
+	text-align: center
+	margin-top: 1.9rem
+	
+	p {
+		color: #ffffff
+		font-size: rem(16);
+		line-height: rem(19);
+		margin-bottom: 0.6rem
+	}
+}
+
+.review__swiper-pagination {
+	font-size: rem(18);
+	line-height: rem(21);
+	color: #ffffff
+	font-weight: bold
+	width: rem(110);
+	height: rem(30);
+	background: #24684C;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: rem(5);
+	display: flex
+	justify-content: center
+	align-items: center
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 0.2rem;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	&:after {
+		display: none
+	}
+}
+
+.review__button {
+	width: rem(50)
+	height: rem(16)
+}
+.review__button-prev{
+	top: auto
+	left: 50%;
+	transform: translate(-190%, 0);
+	bottom: 0.7rem;
+}
+.review__button-next{
+	top: auto
+	right: 50%
+	transform translate(190%,0) rotate(180deg)
+	bottom: 0.7rem
+}
+.review__logo{
+	width: rem(240)
+	position: absolute
+	left: 0
+	bottom: 2.2rem
+}

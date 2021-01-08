@@ -1,0 +1,64 @@
+.btn {
+	margin: 0
+	text-align: center
+	text-decoration: none
+	cursor: pointer
+	position: relative
+	z-index: 5
+	display: inline-block
+	border-radius: rem(50);
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+	transition background 300ms ease-in-out;
+	span {
+		font-family: 'Roboto',sans-serif;
+		font-size: rem(24);
+		line-height: rem(28)
+		text-transform: uppercase;
+		font-weight: 400;
+		display: inline-block
+		color: #FFEFA9;
+		position: relative
+		z-index: 5
+	}
+}
+
+.btn_big {
+	padding: 0.8rem 0;
+	width: rem(260);
+	height: rem(54);
+}
+
+
+.btn_border-yellow{
+	position: relative
+	 &:after {
+	     content: "";
+	     display: block;
+	     position: absolute;
+		 background: url("../images/border.png") no-repeat
+		 -webkit-background-size: cover
+		 background-size: cover
+		 //width: 103%
+		 top: 0
+		 left: rem(-4)
+		 bottom: 0
+		 right: rem(-4)
+	   }
+	
+	&:hover {
+		background: #9E8000;
+		&:after {
+			background: url("../images/border-hover.png") no-repeat
+			background-size: cover
+		}
+	}
+}
+
+.js__show {
+	opacity: 0
+	transition $opacityTransition
+}
+
+.animate {
+	opacity: 1
+}
